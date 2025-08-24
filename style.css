@@ -1,0 +1,130 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+/* Dashboard grid layout: 2 cards per row */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 20px;
+}
+
+/* Card styling for graphs, devices, and summary */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Canvas graphs full width */
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Login page container */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Login input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Submit buttons (login, logout) */
+input[type=submit] {
+    width: 100%;
+    padding: 8px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Submit hover effect */
+input[type=submit]:hover {
+    background: #45a049;
+}
+
+/* Logout button container */
+.logout-container {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+/* Logout button styling */
+.logout-container input[type=submit] {
+    width: auto;
+    padding: 6px 12px;
+    background: #f44336;
+}
+
+.logout-container input[type=submit]:hover {
+    background: #d32f2f;
+}
+
+/* Back button styling */
+a.back-button {
+    padding: 6px 12px;
+    background: #2196F3;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a.back-button:hover {
+    background: #1976D2;
+}
+
+/* Summary cards container spacing */
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Filter buttons */
+button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1976D2;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr; /* stack 1 per row */
+    }
+}
